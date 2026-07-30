@@ -2,12 +2,119 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio-v1</title>
+    <meta
+      name="description"
+      content="Muhammed (@x14kernal) — software developer portfolio."
+    />
+    <title>Muhammed (@x14kernal) | Portfolio</title>
   </head>
   <body>
-    <div id="app"></div>
+    <header>
+      <!-- Logo -->
+      <div>
+        <a href="/">x14</a>
+      </div>
+
+      <!-- navbar -->
+      <nav aria-label="Main navigation">
+        <ul>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About me -->
+      <section id="about">
+        <h1>Muhammed <span>x14kernal</span></h1>
+        <p>
+          I'm Muhammed, a software developer focused on building practical web
+          applications and improving my full-stack development skills.
+        </p>
+      </section>
+      <!------------->
+
+      <!-- Projects -->
+      <section id="projects">
+        <h2>Projects</h2>
+        <!-- List of projects -->
+        <article>
+          <img
+            src="/public/images/habit-tracker.png"
+            alt="Screenshot of the Focus & Habit Tracker application"
+          />
+
+          <h3>Focus & Habit Tracker</h3>
+
+          <p>
+            A React, TypeScript, and Tailwind application for tracking daily
+            habits, streaks, focus sessions, statistics, and dark mode. It
+            helped me practice state management, persistence, routing,
+            validation, testing, and responsive UI development.
+          </p>
+
+          <div>
+            <a
+              href="https://focus-habit-tracker-x.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live Demo
+            </a>
+
+            <a
+              href="https://github.com/x14kernal/focus-habit-tracker"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub Repository
+            </a>
+          </div>
+        </article>
+      </section>
+      <!------------->
+
+      <!-- Contact -->
+      <section id="contact">
+        <h2>Contact</h2>
+        <ul>
+          <li><a href="mailto:muahmed932@gmail.com">Email</a></li>
+          <li>
+            <a
+              target="_blank"
+              href="https://x.com/x14kernal"
+              rel="noopener noreferrer"
+              >X (Twitter)</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://github.com/x14kernal"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </li>
+        </ul>
+      </section>
+      <!------------->
+    </main>
+
+    <footer>
+      <p>© 2026 x14kernal</p>
+    </footer>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
