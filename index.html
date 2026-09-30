@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -11,158 +11,361 @@
     />
     <title>Muhammed (@x14kernal) | Portfolio</title>
   </head>
-  <body class="bg-slate-950 text-slate-100 text-base leading-relaxed">
-    <div class="container mx-auto w-full sm:max-w-5xl sm:mx-auto px-4">
-      <header class="fixed top-0 left-0 right-0 w-full sm:max-w-5xl mx-auto">
-        <div
-          class="bg-slate-950/80 flex justify-between items-center py-3 sm:py-6 border-b border-slate-800 px-4"
-        >
-          <!-- Logo -->
-          <div>
-            <a class="text-xl font-bold" href="/">x14</a>
-          </div>
 
-          <!-- navbar -->
-          <nav aria-label="Main navigation">
-            <ul class="flex items-center gap-1">
-              <li class="text-xs sm:text-base px-1">
-                <a
-                  href="#about"
-                  class="px-1 text-slate-400 hover:text-sky-600 rounded outline-none ring-sky-600 focus-visible:ring-2 ring-offset-2 ring-offset-slate-950"
-                  >About</a
+  <body
+    class="bg-stone-50 text-stone-800 antialiased transition-colors duration-300 dark:bg-slate-950 dark:text-slate-100"
+  >
+    <div class="mx-auto w-full max-w-4xl px-5 sm:px-8">
+      <!-- Header -->
+      <header class="sticky top-0 z-50 -mx-5 sm:-mx-8">
+        <div
+          class="border-b border-stone-200/80 bg-stone-50/90 px-5 py-4 backdrop-blur transition-colors duration-300 sm:px-8 dark:border-slate-800/70 dark:bg-slate-950/90"
+        >
+          <div class="mx-auto flex max-w-4xl items-center justify-between">
+            <a
+              href="/"
+              class="font-mono text-lg font-semibold tracking-tight text-stone-900 dark:text-white"
+            >
+              x14
+            </a>
+
+            <div class="flex items-center gap-5">
+              <nav aria-label="Main navigation">
+                <ul class="flex items-center gap-4 text-sm sm:gap-5">
+                  <li>
+                    <a
+                      href="#about"
+                      class="text-stone-500 transition-colors hover:text-stone-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-600 dark:text-slate-400 dark:hover:text-white dark:focus-visible:ring-sky-500"
+                    >
+                      About
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#projects"
+                      class="text-stone-500 transition-colors hover:text-stone-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-600 dark:text-slate-400 dark:hover:text-white dark:focus-visible:ring-sky-500"
+                    >
+                      Projects
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#contact"
+                      class="text-stone-500 transition-colors hover:text-stone-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-600 dark:text-slate-400 dark:hover:text-white dark:focus-visible:ring-sky-500"
+                    >
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+
+              <!-- Theme toggle -->
+              <button
+                id="theme-toggle"
+                type="button"
+                aria-label="Switch to light mode"
+                class="flex h-8 w-8 items-center justify-center rounded-full text-stone-500 transition hover:bg-stone-200 hover:text-stone-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-600 dark:text-slate-400 dark:hover:bg-slate-800 dark:hover:text-white dark:focus-visible:ring-sky-500"
+              >
+                <!-- Sun -->
+                <svg
+                  id="sun-icon"
+                  class="hidden h-4 w-4 dark:block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.8"
+                  stroke="currentColor"
                 >
-              </li>
-              <li class="text-xs sm:text-base px-1">
-                <a
-                  href="#projects"
-                  class="px-1 text-slate-400 hover:text-sky-600 rounded outline-none ring-sky-600 focus-visible:ring-2 ring-offset-2 ring-offset-slate-950"
-                  >Projects</a
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 3v1.5M12 19.5V21M4.22 4.22l1.06 1.06M18.72 18.72l1.06 1.06M3 12h1.5M19.5 12H21M4.22 19.78l1.06-1.06M18.72 5.28l1.06-1.06M16.5 12a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Z"
+                  />
+                </svg>
+
+                <!-- Moon -->
+                <svg
+                  id="moon-icon"
+                  class="h-4 w-4 dark:hidden"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.8"
+                  stroke="currentColor"
                 >
-              </li>
-              <li class="text-xs sm:text-base px-1">
-                <a
-                  href="#contact"
-                  class="px-1 text-slate-400 hover:text-sky-600 rounded outline-none ring-sky-600 focus-visible:ring-2 ring-offset-2 ring-offset-slate-950"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </nav>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </header>
 
-      <main class="mt-36 space-y-16">
-        <!-- About me -->
-        <section id="about" class="flex flex-col gap-2">
-          <h1 class="text-4xl sm:text-5xl flex flex-col gap-0.5">
-            Muhammed
-            <span class="text-sm sm:text-lg text-sky-400">
+      <main>
+        <!-- Hero -->
+        <section
+          id="about"
+          class="flex min-h-[70vh] items-center py-20 sm:py-28"
+        >
+          <div class="max-w-2xl">
+            <p class="mb-4 font-mono text-sm text-amber-700 dark:text-sky-400">
+              <a href=""></a>
               <a
-                target="_blank"
                 href="https://x.com/x14kernal"
+                target="_blank"
                 rel="noopener noreferrer"
-                class="underline underline-offset-3 bg-sky-950"
-                >x14kernal</a
+                class="text-amber-700 transition hover:text-amber-600 dark:text-sky-400 dark:hover:text-sky-300"
               >
-            </span>
-          </h1>
-          <p class="text-slate-400 sm:text-lg max-w-2xl">
-            I'm Muhammed, a software developer focused on building practical web
-            applications and improving my full-stack development skills.
-          </p>
+                @x14kernal
+              </a>
+            </p>
+
+            <h1
+              class="text-4xl font-semibold tracking-tight text-stone-950 sm:text-6xl dark:text-white"
+            >
+              Muhammed
+            </h1>
+
+            <p
+              class="mt-6 max-w-xl text-base leading-7 text-stone-500 sm:text-lg sm:leading-8 dark:text-slate-400"
+            >
+              Software developer focused on building practical web applications,
+              learning full-stack development, and turning ideas into simple,
+              useful products.
+            </p>
+
+            <div class="mt-8 flex flex-wrap gap-5 text-sm">
+              <a
+                href="#projects"
+                class="text-stone-900 underline decoration-stone-300 underline-offset-4 transition hover:decoration-amber-600 dark:text-white dark:decoration-slate-700 dark:hover:decoration-sky-400"
+              >
+                View projects →
+              </a>
+
+              <a
+                href="mailto:muahmed932@gmail.com"
+                class="text-stone-500 underline decoration-stone-200 underline-offset-4 transition hover:text-stone-900 hover:decoration-amber-600 dark:text-slate-400 dark:decoration-slate-800 dark:hover:text-white dark:hover:decoration-sky-400"
+              >
+                Get in touch
+              </a>
+            </div>
+          </div>
         </section>
-        <!------------->
 
         <!-- Projects -->
-        <section id="projects" class="flex flex-col gap-8 p-2">
-          <h2 class="text-3xl">Projects</h2>
-          <!-- List of projects -->
-          <div class="grid grid-cols-12">
-            <article
-              class="col-span-full sm:col-span-6 md:col-span-6 flex flex-col shadow shadow-sky-900 rounded-xl overflow-hidden"
+        <section id="projects" class="scroll-mt-24 py-16 sm:py-20">
+          <div class="mb-10">
+            <p
+              class="font-mono text-xs uppercase tracking-widest text-amber-700 dark:text-sky-400"
             >
-              <img
-                class="w-full"
-                src="/images/habit-tracker.png"
-                alt="Screenshot of the Focus & Habit Tracker application"
-              />
+              Selected work
+            </p>
 
-              <div class="flex flex-col gap-4 py-2">
-                <h3 class="text-2xl border-b border-slate-700 px-4 py-2">
-                  Focus & Habit Tracker
-                </h3>
+            <h2
+              class="mt-2 text-2xl font-semibold tracking-tight text-stone-950 sm:text-3xl dark:text-white"
+            >
+              Projects
+            </h2>
+          </div>
 
-                <p class="text-sm sm:text-base text-slate-400 p-2 px-4">
-                  A React, TypeScript, and Tailwind application for tracking
-                  daily habits, streaks, focus sessions, statistics, and dark
-                  mode. It helped me practice state management, persistence,
-                  routing, validation, testing, and responsive UI development.
+          <div class="grid items-stretch gap-8 sm:grid-cols-2">
+            <!-- Recipe Box -->
+            <article
+              class="group flex h-full flex-col overflow-hidden rounded-lg border border-stone-200 bg-white/60 transition-colors hover:border-stone-300 dark:border-slate-800 dark:bg-slate-900/30 dark:hover:border-slate-700"
+            >
+              <div
+                class="aspect-video shrink-0 overflow-hidden border-b border-stone-200 dark:border-slate-800"
+              >
+                <img
+                  class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.02]"
+                  src="/images/recipes.png"
+                  alt="Screenshot of the Recipe Box application"
+                />
+              </div>
+
+              <div class="flex flex-1 flex-col p-5 sm:p-6">
+                <div class="flex items-start justify-between gap-4">
+                  <h3
+                    class="text-lg font-medium text-stone-900 dark:text-white"
+                  >
+                    Recipe Box
+                  </h3>
+
+                  <span
+                    class="shrink-0 font-mono text-xs text-stone-400 dark:text-slate-600"
+                  >
+                    02
+                  </span>
+                </div>
+
+                <p
+                  class="mt-3 flex-1 text-sm leading-6 text-stone-500 dark:text-slate-400"
+                >
+                  A full-stack recipe application for discovering, creating, and
+                  managing recipes. Built with a dedicated REST API and
+                  responsive frontend, with a focus on clean architecture,
+                  reusable components, API integration, and practical UX.
                 </p>
 
-                <!-- Links -->
-                <div
-                  class="flex items-center gap-4 sm:gap-6 text-sm sm:text-base px-4 pb-2"
+                <div class="mt-6 flex flex-wrap items-center gap-5 text-sm">
+                  <a
+                    href="https://recipes-x.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-stone-700 transition hover:text-amber-700 dark:text-slate-300 dark:hover:text-sky-400"
+                  >
+                    Live demo ↗
+                  </a>
+
+                  <a
+                    href="https://github.com/x14kernal/recipe-box-web"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-stone-400 transition hover:text-stone-900 dark:text-slate-500 dark:hover:text-white"
+                  >
+                    Frontend ↗
+                  </a>
+
+                  <a
+                    href="https://github.com/x14kernal/recipe-box-api"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-stone-400 transition hover:text-stone-900 dark:text-slate-500 dark:hover:text-white"
+                  >
+                    Backend ↗
+                  </a>
+                </div>
+              </div>
+            </article>
+            <!-- Habit Tracker -->
+            <article
+              class="group flex h-full flex-col overflow-hidden rounded-lg border border-stone-200 bg-white/60 transition-colors hover:border-stone-300 dark:border-slate-800 dark:bg-slate-900/30 dark:hover:border-slate-700"
+            >
+              <div
+                class="aspect-video shrink-0 overflow-hidden border-b border-stone-200 dark:border-slate-800"
+              >
+                <img
+                  class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.02]"
+                  src="/images/habit-tracker.png"
+                  alt="Screenshot of the Focus & Habit Tracker application"
+                />
+              </div>
+
+              <div class="flex flex-1 flex-col p-5 sm:p-6">
+                <div class="flex items-start justify-between gap-4">
+                  <h3
+                    class="text-lg font-medium text-stone-900 dark:text-white"
+                  >
+                    Focus & Habit Tracker
+                  </h3>
+
+                  <span
+                    class="shrink-0 font-mono text-xs text-stone-400 dark:text-slate-600"
+                  >
+                    01
+                  </span>
+                </div>
+
+                <p
+                  class="mt-3 flex-1 text-sm leading-6 text-stone-500 dark:text-slate-400"
                 >
+                  A React and TypeScript application for tracking habits,
+                  streaks, focus sessions, and statistics. Built to practice
+                  state management, persistence, routing, validation, testing,
+                  and responsive UI development.
+                </p>
+
+                <div class="mt-6 flex items-center gap-5 text-sm">
                   <a
                     href="https://focus-habit-tracker-x.vercel.app"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="px-1 text-slate-300 hover:text-sky-600 rounded outline-none ring-sky-600 focus-visible:ring-2 ring-offset-2 ring-offset-slate-950"
+                    class="text-stone-700 transition hover:text-amber-700 dark:text-slate-300 dark:hover:text-sky-400"
                   >
-                    Demo 🚀
+                    Live demo ↗
                   </a>
 
                   <a
                     href="https://github.com/x14kernal/focus-habit-tracker"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="px-1 text-slate-600 hover:text-sky-600 rounded outline-none ring-sky-600 focus-visible:ring-2 ring-offset-2 ring-offset-slate-950"
+                    class="text-stone-400 transition hover:text-stone-900 dark:text-slate-500 dark:hover:text-white"
                   >
-                    GitHub 🔗
+                    GitHub ↗
                   </a>
                 </div>
               </div>
             </article>
           </div>
         </section>
-        <!------------->
 
         <!-- Contact -->
-        <section id="contact" class="flex flex-col gap-6 p-2">
-          <h2 class="text-3xl">Contact</h2>
-          <ul class="flex items-center gap-8">
-            <li class="text-xs sm:text-base px-1">
+        <section
+          id="contact"
+          class="scroll-mt-24 border-t border-stone-200 py-20 sm:py-24 dark:border-slate-800/70"
+        >
+          <div class="max-w-xl">
+            <p
+              class="font-mono text-xs uppercase tracking-widest text-amber-700 dark:text-sky-400"
+            >
+              Contact
+            </p>
+
+            <h2
+              class="mt-2 text-2xl font-semibold tracking-tight text-stone-950 sm:text-3xl dark:text-white"
+            >
+              Let's connect
+            </h2>
+
+            <p
+              class="mt-4 text-sm leading-6 text-stone-500 sm:text-base dark:text-slate-400"
+            >
+              Have a project, idea, or just want to say hello? Feel free to
+              reach out.
+            </p>
+
+            <div class="mt-7 flex flex-wrap gap-x-6 gap-y-3 text-sm">
               <a
                 href="mailto:muahmed932@gmail.com"
-                class="px-1 text-slate-400 hover:text-sky-600 rounded outline-none ring-sky-600 focus-visible:ring-2 ring-offset-2 ring-offset-slate-950"
-                >Email</a
+                class="text-stone-700 transition hover:text-amber-700 dark:text-slate-300 dark:hover:text-sky-400"
               >
-            </li>
-            <li class="text-xs sm:text-base px-1">
+                Email ↗
+              </a>
+
               <a
-                target="_blank"
                 href="https://x.com/x14kernal"
-                rel="noopener noreferrer"
-                class="px-1 text-slate-400 hover:text-sky-600 rounded outline-none ring-sky-600 focus-visible:ring-2 ring-offset-2 ring-offset-slate-950"
-                >X (Twitter)</a
-              >
-            </li>
-            <li class="text-xs sm:text-base px-1">
-              <a
                 target="_blank"
-                href="https://github.com/x14kernal"
                 rel="noopener noreferrer"
-                class="px-1 text-slate-400 hover:text-sky-600 rounded outline-none ring-sky-600 focus-visible:ring-2 ring-offset-2 ring-offset-slate-950"
-                >GitHub</a
+                class="text-stone-400 transition hover:text-stone-900 dark:text-slate-400 dark:hover:text-white"
               >
-            </li>
-          </ul>
+                X ↗
+              </a>
+
+              <a
+                href="https://github.com/x14kernal"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-stone-400 transition hover:text-stone-900 dark:text-slate-400 dark:hover:text-white"
+              >
+                GitHub ↗
+              </a>
+            </div>
+          </div>
         </section>
-        <!------------->
       </main>
 
-      <footer class="mt-8 py-4 border-t border-slate-800">
-        <p class="text-base">© 2026 x14kernal</p>
+      <!-- Footer -->
+      <footer
+        class="flex flex-col gap-2 border-t border-stone-200 py-6 text-xs text-stone-400 sm:flex-row sm:items-center sm:justify-between dark:border-slate-800/70 dark:text-slate-600"
+      >
+        <p>© 2026 x14kernal</p>
+        <p class="font-mono">Built with HTML & Tailwind CSS</p>
       </footer>
     </div>
 
